@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie Curie - Tribute</title>
+    <style>
+        /* Updated styles while keeping your specific class names */
+        .body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at center, #ffffff 0%, #e8eaf6 100%);
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 50px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 10px solid #b30059;
+        }
+
+        .main-heading {
+            font-family: 'Constantia', 'Georgia', serif;
+            font-size: 3.5em;
+            color: #b30059;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .picture {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #b30059;
+            padding: 10px;
+            margin: 20px 0;
+            transition: all 0.5s ease;
+            filter: sepia(20%);
+        }
+
+        .picture:hover {
+            transform: rotate(3deg) scale(1.05);
+            filter: sepia(0%);
+        }
+
+        .timeline-heading {
+            color: #800040;
+            font-size: 1.8em;
+            margin-top: 50px;
+            border-bottom: 2px solid #f0f0f0;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .timeline {
+            text-align: left;
+            max-width: 700px;
+            margin: 30px auto;
+            padding-left: 40px;
+            list-style-type: none; /* Custom bullets below */
+        }
+
+        .li {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #ffe6f0;
+        }
+
+        /* Scientific-style bullet points */
+        .li::before {
+            content: "•";
+            color: #b30059;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .link {
+            color: #b30059;
+            text-decoration: none; 
+            font-weight: bold;
+            border-bottom: 1px transparent solid;
+            transition: border 0.3s;
+        }
+
+        .link:hover {
+            border-bottom: 1px solid #b30059;
+        }
+
+        .quote {
+            font-family: 'Georgia', serif;
+            font-size: 1.3em;
+            font-style: italic;
+            color: #555;
+            background: #fff9fb;
+            border-left: 5px solid #b30059;
+            padding: 25px;
+            margin: 40px auto;
+            max-width: 80%;
+            line-height: 1.5;
+        }
+
+        .more-info {
+            font-size: 1em;
+            color: #800040;
+            margin-top: 50px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1 class="main-heading">Marie Curie</h1>
+        <p class="description">The mother of modern physics and a pioneer of radioactivity</p>
+
+        <div class="image-container">
+            <img class="picture" src="assets/marie-curie.jpeg" alt="Marie Curie portrait">
+            <p style="color: #95a5a6; font-size: 0.9em;"><em>"A scientist in his laboratory is not a mere technician..."</em></p>
+        </div>
+
+        <h4 class="timeline-heading">Milestones of a Extraordinary Life</h4>
+
+        <ul class="timeline">
+            <li class="li"><strong>1867</strong> - Born Maria Skłodowska in Warsaw, Poland.</li>
+            <li class="li"><strong>1891</strong> - Moves to Paris to study at the Sorbonne, often living on just bread and tea to afford her education.</li>
+            <li class="li"><strong>1895</strong> - Marries Pierre Curie, beginning one of the most famous partnerships in scientific history.</li>
+            <li class="li"><strong>1898</strong> - Discovers <strong>Polonium</strong> and <strong>Radium</strong>; coins the term "radioactivity."</li>
+            <li class="li"><strong>1903</strong> - Becomes the first woman to win a Nobel Prize (Physics), shared with Pierre and Henri Becquerel.</li>
+            <li class="li"><strong>1906</strong> - After Pierre's tragic death, she takes his place as Professor at the Sorbonne, the first woman to hold the post.</li>
+            <li class="li"><strong>1911</strong> - Wins her second Nobel Prize (Chemistry), becoming the first person to win twice.</li>
+            <li class="li"><strong>1914</strong> - During WWI, she develops mobile radiography units ("Little Curies") to help battlefield surgeons.</li>
+            <li class="li"><strong>1934</strong> - Passes away in France due to aplastic anemia, caused by her lifelong exposure to radiation.</li>
+            <li class="li"><strong>1995</strong> - Her remains are moved to the Panthéon in Paris to honor her achievements.</li>
+        </ul>
+
+        <blockquote class="quote">
+            "One never notices what has been done; one can only see what remains to be done."
+        </blockquote>
+
+        <h3 class="more-info">Explore more about her incredible legacy on her <a class="link" href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank">Wikipedia entry.</a></h3>
+    </div>
+</body>
+
+</html>
